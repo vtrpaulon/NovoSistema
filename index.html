@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Serviço</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logoDAE" src="logoDAE.png" alt="Logo_DAE">
+        </div>
+        <div class="titulo">
+            <h1>SERVIÇO DE LIGAÇÃO</h1>
+            <h2>SOLICITAÇÃO DE LIGAÇÃO</h2>
+        </div>
+    </header>
+    <main>
+        <div>
+            <label for="processo">PROCESSO:</label>
+            <input type="text" id="processo" />
+            
+            <label for="regional">REGIONAL:</label>
+            <select id="regional">
+                <option value=""></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            
+            <label for="liberado">LIBERADO EM:</label>
+            <input type="date" id="liberado" /><br>
 
+            <label for="executar">EXECUTAR ATÉ:</label>
+            <input type="date" id="executar" />
+            <label>DATA DA EXECUÇÃO: ____/____/______</label><br>
+
+            <label for="solicitacao">SOLICITAÇÃO DE:</label>
+            <select id="solicitacao">
+                <option value=""></option>
+                <option value="ÁGUA E ESGOTO">LIGAÇÃO DE ÁGUA E ESGOTO</option>
+                <option value="SOMENTE ÁGUA">LIGAÇÃO SOMENTE ÁGUA</option>
+                <option value="SOMENTE ESGOTO">LIGAÇÃO SOMENTE ESGOTO</option>
+            </select>
+
+            <label for="hidrometro">HIDRÔMETRO:</label>
+            <input type="text" id="hidrometro"><br>
+
+            <label for="agua">ÁGUA:</label>
+            <select id="agua">
+                <option value=""></option>
+                <option value="PASSEIO">REDE DE ÁGUA NO PASSEIO</option>
+                <option value="RAMAL DE ÁGUA LOCALIZADO">RAMAL DE ÁGUA LOCALIZADO</option>
+                <option value="ÁGUA LIGADA">ÁGUA LIGADA</option>
+                <option value="RAMAL DE ÁGUA NÃO LOCALIZADO">RAMAL DE ÁGUA NÃO LOCALIZADO</option>
+                <option value="NAO TEM RAMAL">NÃO TEM RAMAL DE ÁGUA</option>
+            </select>
+
+            <label for="tipo_ligacao">TIPO DE LIGAÇÃO:</label>
+            <select id="tipo_ligacao">
+                <option value=""></option>
+                <option value="MANUAL">LIGAÇÃO MANUAL</option>
+                <option value="ABERTURA">ABERTURA DE RUA</option>
+                <option value="RELIGAÇÃO">RELIGAÇÃO</option>
+            </select><br>
+
+            <label for="esgoto">ESGOTO:</label>
+            <select id="esgoto">
+                <option value=""></option>
+                <option value="PASSEIO">REDE DE ESGOTO NO PASSEIO</option>
+                <option value="RAMAL DE ESGOTO LOCALIZADO">RAMAL DE ESGOTO LOCALIZADO</option>
+                <option value="ESGOTO LIGADO">ESGOTO LIGADO</option>
+                <option value="RAMAL DE ESGOTO NÃO LOCALIZADO">RAMAL DE ESGOTO NÃO LOCALIZADO</option>
+                <option value="NAO TEM RAMAL">NÃO TEM RAMAL DE ESGOTO</option>
+            </select>
+
+            <label for="abertura">ABERTURA:</label>
+            <select id="abertura">
+                <option value=""></option>
+                <option value="ASFALTO">ASFALTO</option>
+                <option value="TERRA">TERRA</option>
+                <option value="PARALELEPÍPEDO">PARALELEPÍPEDO</option>
+                <option value="OUTROS">OUTROS</option>
+            </select><br><br>
+            <hr>
+        </div>
+
+        <div class="imovel">
+            <h2>DADOS DO IMÓVEL</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome"><br>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua">
+                
+                <label for="numero">Nº:</label>
+                <input type="text" id="numero"><br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone">
+            </form>
+        </div><br>
+
+        <div>
+            <h2>MATERIAIS UTILIZADOS NAS LIGAÇÕES</h2>
+            <img src="materiais.JPG" alt="Materiais" width="90%" height="50%">
+        </div>
+
+        <p>Para uso das equipes</p>
+
+        <div class="tela2">
+            <img src="cadastramento_de_rede_de_agua.JPG" alt="Rede de água" width="90%" height="50%">
+            <img src="cadastramento_de_rede_de_esgoto.JPG" alt="Rede de esgoto" width="90%" height="50%">
+            <img src="termo.JPG" alt="Termo" width="90%" height="50%">
+        </div>
+    </main>
+
+    <div class="center">
+        <button><a href="index.html">VOLTAR</a></button>
+        <button onclick="window.print()">IMPRIMIR / SALVAR PDF</button>
+    </div>
+</body>
+</html>
